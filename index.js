@@ -8,10 +8,12 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // ...
 const sorter = (arr, cback)=>{
   let list = cback(arr);
+  let ex = [];
   for (let o = 0; o < list.length; o++) {
-    list.push(o+1+". "+names[o]);
+    let cb= o+1;
+    ex.push(cb + ". " + names[o]);
   }
-  return list;
+  return ex;
 };
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
